@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: rgb(30, 0, 255);
+} */
+
+.slider{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 300%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.container-header{
+    border-bottom: 1px solid black;
+}
+
+.container-logo{
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.div-uno{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.div-uno h1{
+    font-size: 30px;
+}
+
+.container-sub-header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.container-sub-header h3{
+    font-size: 25px;
+    width: 100%; 
+
+}
+
+
+.section-articulos{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:30px;
+    padding: 0px;
+}
+
+.section-articulos article{
+    width: 100%;
+    height: 370px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 22px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+   
+}
+.section-articulos article:hover{
+    box-shadow: 3px 7px 10px  rgba(0, 0, 0, 0.451);
+    
+}
+.section-articulos img{
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.section-articulos h3{
+    font-size: 25px;
+    margin: 10px;
+}
+.section-articulos p{
+    display: none;
+}
+.section-articulos article:hover p{
+    display: block;
+    
+}
+
+article div{
+    margin: 0px auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: gray;
+    width: 100%;
+    height: 150px;
+}
